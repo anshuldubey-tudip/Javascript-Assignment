@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1 style="color:red">JavaScript Assignment</h1>
+
+    <form name="myForm" action="String.html" method="post">
+        Enter the String: <input type = "text" name ="str" ><br><br>
+        <input type="button" value="Check!" onclick="myFunction()">
+    </form>
+
+  <p id="demo"></p>
+  <p id="demo1"></p>
+       <script>
+           String.prototype.function = isEmpty()
+            {
+               document.getElementById("demo").innerHTML= myFunction();
+            }
+           function myFunction()
+           {
+               var str= document.forms["myForm"]["str"].value;
+               if(str.length==0 || !str.trim() )
+               {
+                   document.getElementById("demo1").innerHTML= "true";
+               }
+               else{
+                   document.getElementById("demo1").innerHTML= "false";
+               }
+
+
+           }
+       </script>
+
+</body>
+</html>
